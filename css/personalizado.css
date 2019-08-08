@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.cabecera {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../imagenes/cabecera2.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  }
+
+  .texto-verde{
+      color: #fff;
+  }
+
+  h1,p{
+
+    font-family: 'Lexend Deca', sans-serif;
+
+  }
