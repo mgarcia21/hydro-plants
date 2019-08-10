@@ -47,3 +47,13 @@ body{
     background-image: url('../imagenes/tablero.jpg') ;
 
   }
+
+  .btn-primary{
+    background-color: #a4c040;
+    border-color: #a4c040;
+
+  }
+  
+  .card{
+    border-color: #fff;
+  }
