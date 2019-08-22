@@ -5,6 +5,9 @@ body{
     
 }
 
+  ul{
+    list-style: disc;
+  }
 .cabecera {
     height: 100vh;
     min-height: 500px;
@@ -25,6 +28,9 @@ body{
 
   }
   
+  .horizonte{
+    max-height: 
+  }
   
   .link-verde{
     color: #a4c040;
@@ -57,3 +63,25 @@ body{
   .card{
     border-color: #fff;
   }
+  .card-img-top{
+    max-height: 200px;
+  }
+  .horizonte{
+    max-height: 350px;
+  }
+  
+  .doble{
+    font-size: 11px;
+    }
+  
+    hr{
+      border: 10px solid #a4c040;
+      border-radius: 5px;
+    }
+    .hr-mision{
+      border: 10px solid #000;
+      border-radius: 5px;
+    }
+    .field_set{
+      border: 1px #a4c040 solid;
+     }​
