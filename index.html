@@ -11,10 +11,10 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/personalizado.css">
 
-  <title>Hydro-Plant</title>
+  <title>Hidro-Plant</title>
 </head>
 
-<body>
+<body >
   <header class="cabecera">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
@@ -27,8 +27,11 @@
       </div>
     </div>
   </header>
+  <div id="banner">
   <br><br>
   <section class="Servicios">
+    <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="imagenes/fondo.mp4" type="video/mp4"></video>
     <div class="container">
       <!-- Stack the columns on mobile by making one full-width and the other half-width -->
       <div class="row">
@@ -36,17 +39,17 @@
           <div class="card" style="width: 18rem;">
             <img src="imagenes/imagen3.jpg" class="card-img-top" alt="Hydro-Plants">
             <div class="card-body">
-              <h5 class="card-title">Diseño e instalación de jardines</h5>
+              <h5 class="card-title" onclick="video()">Diseño e instalación de jardines</h5>
               <div class="row">
                 <div class="col-sm-6">
-                  <ul class="card/text doble">
+                  <ul class="card-text doble">
                     <li>Aéreos</li>
                     <li>Horizontales</li>
                     <li>Macetones</li>
                   </ul>
                 </div>
                 <div class="col-sm-6">
-                  <ul class="card/text doble">
+                  <ul class="card-text doble">
                     <li>Jardineras</li>
                     <li>Colgantes</li>
                   </ul>
@@ -63,7 +66,7 @@
             <img src="imagenes/imagen2.jpg" class="card-img-top" alt="Hydro-Plants">
             <div class="card-body">
               <h5 class="card-title">Diseño e instalación de riego </h5>
-              <ul class="card/text doble">
+              <ul class="card-text doble">
                 <li>Aspersión</li>
                 <li>Micro aspersión</li>
                 <li>Goteo</li>
@@ -80,7 +83,7 @@
             <img src="imagenes/imagen4.jpg" class="card-img-top" alt="Hydro-Plants">
             <div class="card-body">
               <h5 class="card-title">Diseño e instalación de huertos</h5>
-              <ul class="card/text doble">
+              <ul class="card-text doble">
                 <li>Hortalizas</li>
                 <li>Plantas aromáticas y medicinales</li>
                 <li>Sistemas hidropónicos</li>
@@ -107,7 +110,13 @@
 
   <section class="Mision vision">
     <div class="container">
+      <br>
+      <h5 class="text-center"> <b> Nuestro personal está capacitado con medidas de seguridad industrial a la hora de realizar cualquier trabajo.</b> </h5>
       <hr class="hr-mision">
+            <p>Hidro-Plants es creada con el afán de las personas que tienen jardín, jardineras o parques que cerca del hogar, de ver un lugar agradable y colorido en donde la interacción de suelo-planta-agua-atmosfera se convierta  en un movimiento de insectos amigables, plantas saludables y verdes, flores coloridas y frutos sanos, utilizando sistemas de riego de micro aspersión o goteo para la reducción de nuestro vital liquido, el cual cada día se está perdiendo en grandes cantidades por el mal uso que las personas le dan.<br>
+           
+            </p>
+
       <div class="row d-flex justify-content-end">
         <div class="col-md-6 col-sm-12 ">
           <fieldset class="">
@@ -129,8 +138,52 @@
       </div>
     </div>
 
-    <br>
   </section>
+  <section class="contactanos">
+    <div class="container">
+    <hr>
+    <div class="row ">
+      <div class="col-md-6 col-sm-12">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Su nombre">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="tel">Teléfono</label>
+                <input name="tel" type="text" class="form-control" id="tel" placeholder="2222-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo</label>
+              <input name="correo" type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="validationTextarea">Mensaje</label>
+              <textarea name="mensaje" class="form-control" id="validationTextarea" placeholder="Mensaje opcional"></textarea>
+ 
+            </div>
+     
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <div class="text-center">
+        <img src="imagenes/contacto.png" alt="Hydro-Plants" class="imagen-contacto">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</div>
+  <footer>
+    <hr class="hr-mision">
+    <div class="text-center">
+      <span class="dessarrollado">Sitio desarrollado por <b>Maynor Garcia</b> - 2019<br></span>
+    </div>
+  </footer>
 
 
 
@@ -144,7 +197,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+ 
 
 </body>
-
+ <script type="text/javascript">
+    function video(){
+      document.querySelector("#videobcg").autoplay = "true";
+    }
+  </script>
 </html>
